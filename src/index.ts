@@ -149,13 +149,13 @@ const iconTheme = {
   ],
 };
 
-// Write the icons.json file
-const outputPath = join(ROOT_DIR, "icons.json");
+// Write the icon theme file
+const outputPath = join(ROOT_DIR, "icon_themes", "nube-icons.json");
 const json = JSON.stringify(iconTheme, null, 2);
 
 writeFileSync(outputPath, json, "utf-8");
 
-console.log("\n✓ Generated icons.json (Zed format)");
+console.log("\n✓ Generated icon_themes/nube-icons.json");
 
 // Count statistics
 const extensionCount = Object.keys(fileExtensions).length;
