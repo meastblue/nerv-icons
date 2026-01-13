@@ -1,6 +1,6 @@
 id = "nube-icons"
 name = "Nube Icons"
-version = "0.1.0"
+version = "1.0.0"
 schema_version = 1
 authors = ["meastblue"]
 description = "A cozy icon theme for Zed"
