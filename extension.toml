@@ -1,7 +1,7 @@
 id = "nerv-icons"
-name = "NERV Icons"
+name = "Nerv Icons"
 version = "1.0.0"
 schema_version = 1
 authors = ["meastblue"]
-description = "NERV Icons — Elegant icon theme for Zed"
-repository = "https://github.com/meastblue/nube-icons"
+description = "Nerv Icons — Elegant icon theme for Zed"
+repository = "https://github.com/meastblue/nerv-icons"
