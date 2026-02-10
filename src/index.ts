@@ -1,5 +1,5 @@
 /**
- * Nube Icons - Zed Icon Theme Generator
+ * NERV Icons - Zed Icon Theme Generator
  * Generates the icons.json file in Zed-compatible format
  */
 
@@ -15,7 +15,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const ROOT_DIR = join(__dirname, "..");
 
-console.log("\n🌍 Nube Icons Generator\n");
+console.log("\n🌍 NERV Icons Generator\n");
 console.log("━".repeat(40));
 
 // Get unique icon names from all mappings
@@ -111,11 +111,11 @@ const uniqueIcons = getUniqueIcons();
 
 const iconTheme = {
   $schema: "https://zed.dev/schema/icon_themes/v0.3.0.json",
-  name: "Nube Icons",
+  name: "NERV Icons",
   author: "meastblue",
   themes: [
     {
-      name: "Nube Icons",
+      name: "NERV Icons",
       appearance: "dark",
       directory_icons: buildDirectoryIcons(),
       named_directory_icons: buildNamedDirectoryIcons(),
@@ -128,7 +128,7 @@ const iconTheme = {
       file_icons: buildFileIcons(uniqueIcons),
     },
     {
-      name: "Nube Icons Light",
+      name: "NERV Icons Light",
       appearance: "light",
       directory_icons: {
         collapsed: { path: "./icons/folder_light.svg" },
@@ -150,12 +150,12 @@ const iconTheme = {
 };
 
 // Write the icon theme file
-const outputPath = join(ROOT_DIR, "icon_themes", "nube-icons.json");
+const outputPath = join(ROOT_DIR, "icon_themes", "nerv-icons.json");
 const json = JSON.stringify(iconTheme, null, 2);
 
 writeFileSync(outputPath, json, "utf-8");
 
-console.log("\n✓ Generated icon_themes/nube-icons.json");
+console.log("\n✓ Generated icon_themes/nerv-icons.json");
 
 // Count statistics
 const extensionCount = Object.keys(fileExtensions).length;
@@ -171,5 +171,5 @@ console.log(`   • File names:       ${fileNameCount}`);
 console.log(`   • Folder names:     ${folderCount}`);
 
 console.log("\n🚀 To install in Zed:");
-console.log("   1. Copy to ~/.config/zed/extensions/nube-icons/");
+console.log("   1. Copy to ~/.config/zed/extensions/nerv-icons/");
 console.log("   2. Or install via Zed extensions\n");
